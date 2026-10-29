@@ -72,3 +72,4 @@ footer.site a{color:var(--muted)}
 .panel li{margin:0 0 .4em}
 .panel ul.sub{list-style:"- ";margin-top:.3em}
 @media (max-width:760px){.panel{grid-template-columns:1fr}.panel-col+.panel-col{border-left:0;border-top:1px solid var(--text)}}
+header.site .name{display:flex;align-items:center;gap:12px}header.site .name img{border-radius:50%;display:block}
