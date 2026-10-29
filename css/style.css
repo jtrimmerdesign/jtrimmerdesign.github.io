@@ -58,3 +58,6 @@ footer.site a{color:var(--muted)}
 @media (prefers-reduced-motion:no-preference){.hero h1{animation:rise .5s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(8px)}}}
 .skills{max-width:var(--measure);padding-left:1.2em;margin:0}.skills li{margin:0 0 .35em}
 .prose h3{margin-top:20px}
+.about-grid{display:grid;gap:32px;grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);align-items:start}
+.portrait{width:100%;height:auto;display:block;background:var(--surface)}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr}.about-grid .portrait{order:-1}}

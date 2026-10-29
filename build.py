@@ -39,7 +39,7 @@ for p in P:
         b+='<div class="prose">'+paras(s["body"])+'</div></article>'
     page(p["file"],p["title"],b,"work",p["intro"][0])
 A=S["about"]
-ab=f'<section class="hero"><h1>{e(A["title"])}</h1></section><div class="prose">{paras(A["bio"])}</div>'
+ab=f'<section class="hero"><h1>{e(A["title"])}</h1></section><div class="about-grid"><div class="prose">{paras(A["bio"])}</div><img class="portrait" src="images/jt.jpg" alt="Jamie Trimmer" width="1000" height="563"></div>'
 ab+=f'<h2>Experience</h2><div class="prose"><p><strong>{e(A["experience_employer"])}</strong></p>'+''.join(f'<h3>{e(t)}</h3><p>{e(d)}</p>' for t,d in A["experience"])+'</div>'
 ab+='<h2>Skills</h2><ul class="skills">'+''.join(f'<li>{e(s)}</li>' for s in A["skills"])+'</ul>'
 page("about.html","About",ab,"about","About Jamie Trimmer")
