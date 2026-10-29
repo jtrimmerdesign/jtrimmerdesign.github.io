@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Stylised side-profile portrait of Jamie Trimmer">
+  <defs><clipPath id="c"><circle cx="100" cy="100" r="96"/></clipPath></defs>
+  <circle cx="100" cy="100" r="98" fill="#13153a"/>
+  <g clip-path="url(#c)">
+    <!-- shoulders and neck -->
+    <path d="M20 210 C26 176 60 164 92 162 L118 162 C150 166 180 178 188 210 Z" fill="#2a2d5c"/>
+    <path d="M86 118 L116 118 L120 168 L82 168 Z" fill="#d49b7c"/>
+    <!-- head, facing right -->
+    <path d="M62 84 C60 52 82 36 108 38 C128 40 138 54 138 68 L140 80 C146 90 152 98 148 102 C144 106 140 106 138 108 L132 120 L74 120 Z" fill="#f0c3a4"/>
+    <!-- ear -->
+    <ellipse cx="86" cy="88" rx="7" ry="11" fill="#dba685"/>
+    <!-- short hair -->
+    <path d="M58 90 C52 52 76 28 108 30 C132 32 144 50 140 68 C130 56 116 52 100 54 C86 54 78 62 76 78 L74 98 C66 98 60 96 58 90 Z" fill="#6a6dc4"/>
+    <!-- full beard -->
+    <path d="M70 92 C72 86 80 86 84 94 C90 106 108 106 124 100 C130 100 136 104 140 108 C148 112 150 124 144 140 C138 158 118 166 98 164 C76 162 62 146 62 124 C62 110 64 98 70 92 Z" fill="#6a6dc4"/>
+    <!-- grey streaks -->
+    <path d="M78 118 C82 138 94 152 110 158 C98 148 90 134 88 116 Z" fill="#cfd0ec"/>
+    <path d="M112 124 C116 138 124 148 134 150 C128 142 122 134 120 122 Z" fill="#cfd0ec"/>
+    <!-- mouth -->
+    <path d="M128 112 C134 112 140 114 144 118" stroke="#f0c3a4" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <!-- eye and brow -->
+    <circle cx="124" cy="74" r="3.6" fill="#1a1c3f"/>
+    <path d="M114 66 L132 64" stroke="#2b2d6e" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+  <circle cx="100" cy="100" r="96" fill="none" stroke="#ff4d73" stroke-width="4"/>
+</svg>
