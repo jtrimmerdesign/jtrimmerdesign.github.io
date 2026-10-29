@@ -1,4 +1,4 @@
-import json, html, os
+import json, html, os, re
 D=os.path.dirname(os.path.abspath(__file__))
 S=json.load(open(f"{D}/content/site.json"))
 e=html.escape
@@ -14,12 +14,14 @@ def page(fn,title,body,cur,desc):
     open(f"{D}/{fn}","w").write(out)
 def cards(ps):
     return '<ul class="grid">'+''.join(f'<li><a class="card" href="{p["file"]}"><strong>{e(p["title"])}</strong><span class="role">{e(p["role"])}. {e(p["tags"])}</span></a></li>' for p in ps)+'</ul>'
+def inline(t):
+    return re.sub(r'\[([^\]]+)\]\(([^)]+)\)',r'<a href="\2">\1</a>',e(t))
 def paras(ls):
     o=''
     for t in ls:
         if t.startswith("## "): o+=f'<h3>{e(t[3:])}</h3>'
         elif t.startswith("PASTE"): o+=f'<p class="placeholder">[{e(t)}]</p>'
-        else: o+=f'<p>{e(t)}</p>'
+        else: o+=f'<p>{inline(t)}</p>'
     return o
 P=S["projects"]
 page("index.html",f'{S["name"]}, {S["role"]}',f'<section class="hero"><h1>Mission and encounter designer</h1><p>{e(S["home_bio"])}</p></section><h2>Projects</h2>{cards(P)}',"home",S["home_bio"])
@@ -36,7 +38,11 @@ for p in P:
         elif s["image"]: b+=f'<div class="media"><img src="{s["image"]}" alt="" loading="lazy"></div>'
         b+='<div class="prose">'+paras(s["body"])+'</div></article>'
     page(p["file"],p["title"],b,"work",p["intro"][0])
-page("about.html","About",f'<section class="hero"><h1>About</h1></section><div class="prose">{paras(S["about"])}</div>',"about","About Jamie Trimmer")
+A=S["about"]
+ab=f'<section class="hero"><h1>{e(A["title"])}</h1></section><div class="prose">{paras(A["bio"])}</div>'
+ab+=f'<h2>Experience</h2><div class="prose"><p><strong>{e(A["experience_employer"])}</strong></p>'+''.join(f'<h3>{e(t)}</h3><p>{e(d)}</p>' for t,d in A["experience"])+'</div>'
+ab+='<h2>Skills</h2><ul class="skills">'+''.join(f'<li>{e(s)}</li>' for s in A["skills"])+'</ul>'
+page("about.html","About",ab,"about","About Jamie Trimmer")
 cvb='<section class="hero"><h1>CV</h1></section><p><a class="button" href="assets/Jamie_Trimmer_CV.pdf" download>Download CV (PDF)</a></p><div class="cv-pages">'+''.join(f'<img src="assets/cv-{i}.png" alt="CV page {i}">' for i in (1,2))+'</div>'
 page("cv.html","CV",cvb,"cv","CV of Jamie Trimmer")
 print("built")
