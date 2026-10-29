@@ -1,31 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Stylised side-profile portrait of Jamie Trimmer">
   <defs><clipPath id="c"><circle cx="100" cy="100" r="96"/></clipPath></defs>
   <circle cx="100" cy="100" r="98" fill="#e9e9ee"/>
-  <g clip-path="url(#c)">
-    <!-- jacket and collar -->
-    <path d="M14 210 C20 176 56 166 88 164 L122 164 C156 168 186 180 192 210 Z" fill="#30323a"/>
-    <path d="M88 164 L104 188 L120 164 Z" fill="#e9e9ee"/>
+  <g clip-path="url(#c)" stroke-linejoin="miter">
+    <!-- jacket -->
+    <polygon points="10,210 22,180 70,164 130,164 178,180 192,210" fill="#30323a"/>
+    <polygon points="92,164 106,192 122,164" fill="#e9e9ee"/>
     <!-- neck -->
-    <path d="M88 120 L120 120 L122 166 L100 182 L86 166 Z" fill="#8f919b"/>
-    <!-- head, facing right -->
-    <path d="M62 86 C60 54 82 38 108 40 C128 42 138 56 138 70 L140 82 C146 90 152 98 148 102 C144 106 140 106 138 108 L132 122 L74 122 Z" fill="#b4b6c0"/>
-    <!-- hair: short, swept back with a high front -->
-    <path d="M58 92 C48 54 72 24 112 24 C138 26 150 44 144 68 C136 54 124 48 108 50 C94 50 84 58 82 74 L80 98 C70 100 62 98 58 92 Z" fill="#30323a"/>
-    <path d="M86 44 C102 32 124 34 136 46 C122 40 104 42 90 52 Z" fill="#8f919b"/>
+    <polygon points="84,118 122,118 124,166 106,190 88,166" fill="#8f919b"/>
+    <!-- face -->
+    <polygon points="70,92 68,62 86,44 118,44 132,62 134,74 148,94 136,98 138,108 132,124 74,124" fill="#b4b6c0"/>
+    <polygon points="118,44 132,62 134,74 126,70 120,56" fill="#c9cad2"/>
+    <!-- hair -->
+    <polygon points="60,100 56,62 72,36 104,24 136,28 154,46 146,66 130,52 112,50 94,56 86,74 84,102" fill="#30323a"/>
+    <polygon points="76,48 100,34 128,36 146,52 124,44 100,46 82,58" fill="#8f919b"/>
+    <polygon points="90,52 108,48 124,54 112,56" fill="#c9cad2"/>
     <!-- ear -->
-    <path d="M80 80 C76 76 82 70 90 72 C98 74 98 90 92 98 C88 102 82 100 80 94 Z" fill="#b4b6c0"/>
-    <path d="M85 80 C90 80 92 88 88 94" stroke="#8f919b" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-    <!-- full beard -->
-    <path d="M70 94 C72 86 80 88 84 98 C92 108 110 108 124 102 C130 102 136 105 140 109 C150 114 152 128 146 144 C140 162 120 170 98 168 C74 166 60 148 60 126 C60 112 64 100 70 94 Z" fill="#30323a"/>
-    <!-- beard highlights -->
-    <path d="M76 120 C80 142 94 158 112 164 C98 152 90 136 86 116 Z" fill="#8f919b"/>
-    <path d="M114 126 C118 140 128 150 138 152 C132 144 126 136 124 124 Z" fill="#8f919b"/>
+    <polygon points="82,78 90,72 99,80 98,96 90,102 83,96" fill="#a2a4ae"/>
+    <polyline points="88,80 94,84 92,94" fill="none" stroke="#6f717c" stroke-width="2"/>
+    <!-- beard -->
+    <polygon points="84,100 70,106 64,128 66,150 76,166 90,162 98,180 110,166 122,174 132,158 144,162 148,138 150,118 142,108 132,106 120,112 100,110" fill="#30323a"/>
+    <!-- beard strands -->
+    <polygon points="78,116 90,138 100,168 96,170 84,142" fill="#8f919b"/>
+    <polygon points="104,122 114,146 122,166 118,168 108,148" fill="#8f919b"/>
+    <polygon points="128,124 136,140 138,152 134,152 126,138" fill="#8f919b"/>
     <!-- moustache and mouth -->
-    <path d="M122 104 C130 100 140 104 146 112 C138 110 128 110 122 108 Z" fill="#30323a"/>
-    <path d="M130 116 C136 116 141 118 145 121" stroke="#c9cad2" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <polygon points="118,106 134,102 148,110 150,118 134,112" fill="#30323a"/>
+    <polygon points="132,120 146,122 142,125 132,123" fill="#b4b6c0"/>
     <!-- eye and brow -->
-    <circle cx="125" cy="76" r="3.6" fill="#30323a"/>
-    <path d="M114 68 L134 65" stroke="#30323a" stroke-width="5" stroke-linecap="round"/>
+    <polygon points="120,76 130,74 129,79 121,80" fill="#30323a"/>
+    <polygon points="112,70 134,64 134,69 114,74" fill="#30323a"/>
   </g>
   <circle cx="100" cy="100" r="96" fill="none" stroke="#30323a" stroke-width="4"/>
 </svg>
