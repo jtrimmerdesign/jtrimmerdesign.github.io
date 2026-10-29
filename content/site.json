@@ -1,0 +1,36 @@
+{
+  "name": "Jamie Trimmer",
+  "role": "Game Designer",
+  "email": "jamie.trimmer@gmail.com",
+  "linkedin": "",
+  "bluesky": "",
+  "home_bio": "My focus is mission and encounter design, with a particular interest in making worlds feel inhabited without relying on dialogue to do the heavy lifting.",
+  "projects": [
+    {"slug":"rdo","title":"Red Dead Online","role":"Designer","tags":"Mission design, encounter design, content at scale","file":"rdo.html",
+     "info":[["Project","Red Dead Online"],["Role","Designer"],["Release Date","November 27th, 2018"]],
+     "link":"https://www.rockstargames.com/reddeadonline/",
+     "intro":["I worked across Red Dead Online from beta through to Blood Money in 2021, contributing to every major role release during that period including Bounty Hunter, Trader, Collector, Moonshiner and Naturalist.","Content was authored using a combination of a visual content creation tool and structured data scripting, a hybrid approach that allowed designers to shape mission flow, pacing and escalation without writing bespoke code. The design challenge throughout was making a fundamentally repeatable structure (go somewhere, get something, bring it back) feel varied, purposeful and worth repeating across hundreds of pieces of content."],
+     "studies":["template-system","npc-budget","sabotage-stills","train-robbery"]},
+    {"slug":"gtao","title":"GTA Online","role":"Designer","tags":"Mission design, heists and contracts, templating","file":"gtao.html",
+     "info":[["Project","GTA Online"],["Role","Designer"],["Release Date","October 1st, 2013"]],
+     "link":"https://www.rockstargames.com/gta-online",
+     "intro":["I worked across GTA Online from The Contract in 2021 through to The Chop Shop in 2023, contributing to five major updates across that period.","Content was authored using a combination of a visual content creation tool and structured data scripting, a hybrid approach that allowed designers to shape mission flow, pacing and escalation without writing bespoke code. The design challenge throughout was keeping missions fresh in a game where players had seen everything and expectations were high.","As with RDO, the team developed a templating approach to deliver content at scale across multiple updates, allowing mission logic and structure to be established once and rapidly adapted across different locations and scenarios."],
+     "studies":["paperboy","payphone-hits","chop-shop-finale","whistleblower"]},
+    {"slug":"gta-vi","title":"GTA VI","role":"Designer","tags":"In-engine visual scripting, C#, onboarding","file":"gta-vi.html",
+     "info":[["Project","GTA VI"],["Role","Designer"]],
+     "link":"https://www.rockstargames.com/VI",
+     "intro":["I worked on GTA VI at Rockstar North, designing and implementing content using more complex design and implementation methods, including in-engine visual scripting and C#. That meant adapting quickly to new proprietary tooling and learning C# scripting on the job, and extending and adapting existing gameplay systems to support specific design goals within technical and production constraints.","As one of the earlier members of my team to onboard onto the project, I spent time establishing what worked and what didn't, then passing that knowledge on to colleagues joining later to help speed up their onboarding."],
+     "studies":[]}
+  ],
+  "studies": {
+    "template-system":{"title":"The Template System","project":"rdo","video":"","image":"","epigraph":"","body":["PASTE FINAL TEXT"]},
+    "npc-budget":{"title":"The NPC Budget Problem","project":"rdo","video":"","image":"","epigraph":"","body":["PASTE FINAL TEXT"]},
+    "sabotage-stills":{"title":"Moonshiner: Sabotage Stills","project":"rdo","video":"","image":"","epigraph":"","body":["PASTE FINAL TEXT"]},
+    "train-robbery":{"title":"Trader Resupply: Train Robbery","project":"rdo","video":"","image":"","epigraph":"","body":["PASTE FINAL TEXT"]},
+    "paperboy":{"title":"Acid Lab: Sell - Paperboy","project":"gtao","video":"","image":"","epigraph":"","body":["PASTE FINAL TEXT"]},
+    "payphone-hits":{"title":"The Contract: Payphone Hits - The Cofounder","project":"gtao","video":"","image":"","epigraph":"","body":["PASTE FINAL TEXT"]},
+    "chop-shop-finale":{"title":"Chop Shop: Gangbanger Robbery Finale","project":"gtao","video":"","image":"","epigraph":"","body":["PASTE FINAL TEXT"]},
+    "whistleblower":{"title":"LSA Operations: Whistleblower","project":"gtao","video":"","image":"","epigraph":"","body":["PASTE FINAL TEXT"]}
+  },
+  "about": ["PASTE FINAL ABOUT TEXT"]
+}
